@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Oswald&family=Staatliches&display=swap');
+
+/*General*/
+
+:root {
+    --main-color: #000000;
+    --secondary-color: #FFFFFF;
+    --brand-color: #D9931A;
+    --accent-color-bright: #B1B6BC;
+    --accent-color-dark: #42433E;
+    --background-color-alt: #F7F7F7;
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 1903px;
+    margin: auto;
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+}
+
+p {
+    line-height: 150%;
+}
+
+h1 {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 31px;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+
+h2 {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 44px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 38px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+
+/*Header*/
+
+
+header {
+    background-color: var(--main-color);
+    height: 91px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    justify-content: ;
+    align-items: center;
+}
+
+header .logo img {
+    width: 51px;
+    height: 51px;
+    /*Бо розтягувало, може є інший спосіб?*/
+}
+
+header .menu {
+    display: block;
+    /*justify-content: space-evenly;
+    align-items: center;*/
+}
+
+header .menu a {
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+header .menu a:hover {
+    color: var(--brand-color);
+    /*smooth color transition?*/
+
+}
+
+
+/*Body*/
+
+section {
+    max-width: 1200px;
+    margin: auto;
+}
+/*Cover*/
+
+#cover {
+    width: 1903px; /*Всупереч рядками вище - зробити окремі контейнери для тексту в яких той макс відтс поставити?*/
+    background-image: url(../img/engineBay_cover.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#cover h2, h3 {
+    color: var(--secondary-color);
+}
+#cover h2 {
+    font-size: 94px;
+}
+
+/*About*/
+
+
+
+#about h2, p{
+    text-align: center;
+}
+
+#about p{
+    max-width: 770px;
+    margin: auto;
+}
+
+/*Services*/
+
+#services {
+    background-color: var(--background-color-alt);
+}
