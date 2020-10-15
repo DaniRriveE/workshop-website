@@ -61,12 +61,15 @@ header {
     height: 91px;
     display: flex;
     justify-content: space-around;
+    /*make less spaced*/
     align-items: center;
+    /*sliding header?*/
 }
 
 header .logo {
+    min-width: 260px;
     display: flex;
-    justify-content: ;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -76,21 +79,22 @@ header .logo img {
     /*Бо розтягувало, може є інший спосіб?*/
 }
 
-header .menu {
+header nav.menu {
     display: block;
-    /*justify-content: space-evenly;
-    align-items: center;*/
 }
 
 header .menu a {
     font-family: 'Mulish', sans-serif;
     font-size: 18px;
     color: var(--secondary-color);
+    transition: color 150ms linear;
     text-decoration: none;
+    margin: 5px;
 }
 header .menu a:hover {
     color: var(--brand-color);
-    /*smooth color transition?*/
+    transition: color 150ms linear;
+    /*smooth color transition, ok?*/
 
 }
 
@@ -98,21 +102,53 @@ header .menu a:hover {
 /*Body*/
 
 section {
-    max-width: 1200px;
+    /*max-width: 1200px; How to set this to width of content*/
     margin: auto;
 }
 /*Cover*/
 
 #cover {
-    width: 1903px; /*Всупереч рядками вище - зробити окремі контейнери для тексту в яких той макс відтс поставити?*/
-    background-image: url(../img/engineBay_cover.jpg);
+    /*Всупереч рядками вище - зробити окремі контейнери для тексту в яких той макс відтс поставити?*/
+    min-height: 700px;
+    background: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)), url(../img/engineBay_cover.jpg);
     background-position: center;
     background-size: cover;
-    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#slide1 {
+    /*make height same as parent*/
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+#slide1-text {
+    text-align: center;
+    display: block;
+    /*space elements evenly*/
+}
+
+.primary-button {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    background-color: var(--brand-color);
+    text-decoration: none;
+    border-radius: 3px;
+    transition: color 150ms linear;
+    transition: background-color 150ms linear;
+    padding: 15px 50px 15px 50px;
+}
+
+.primary-button:hover {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    /*transition: color 150ms linear;*/
 }
 
 #cover h2, h3 {
@@ -120,6 +156,10 @@ section {
 }
 #cover h2 {
     font-size: 94px;
+}
+
+@media (min-width: 660px){
+
 }
 
 /*About*/
