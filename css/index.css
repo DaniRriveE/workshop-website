@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&family=Oswald&family=Staatliches&display=swap');
 
+
 /*General*/
 
 :root {
@@ -21,10 +22,6 @@ body {
 
 h1, h2, h3, h4 {
     font-weight: normal;
-}
-
-p {
-    line-height: 150%;
 }
 
 h1 {
@@ -52,18 +49,19 @@ h4 {
     text-transform: uppercase;
 }
 
+p {
+    line-height: 150%;
+}
+
 
 /*Header*/
-
 
 header {
     background-color: var(--main-color);
     height: 91px;
     display: flex;
     justify-content: space-around;
-    /*make less spaced*/
     align-items: center;
-    /*sliding header?*/
 }
 
 header .logo {
@@ -76,7 +74,6 @@ header .logo {
 header .logo img {
     width: 51px;
     height: 51px;
-    /*Бо розтягувало, може є інший спосіб?*/
 }
 
 header nav.menu {
@@ -94,32 +91,28 @@ header .menu a {
 header .menu a:hover {
     color: var(--brand-color);
     transition: color 150ms linear;
-    /*smooth color transition, ok?*/
-
 }
 
 
 /*Body*/
 
 section {
-    /*max-width: 1200px; How to set this to width of content*/
     margin: auto;
 }
+
+
 /*Cover*/
 
 #cover {
-    /*Всупереч рядками вище - зробити окремі контейнери для тексту в яких той макс відтс поставити?*/
     min-height: 700px;
+    display: flex;
+}
+
+#slide1 {
+    width: 100%;
     background: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)), url(../img/engineBay_cover.jpg);
     background-position: center;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#slide1 {
-    /*make height same as parent*/
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,7 +122,10 @@ section {
 #slide1-text {
     text-align: center;
     display: block;
-    /*space elements evenly*/
+}
+
+#slide1 h2 {
+    margin: 10px 0 10px 0;
 }
 
 .primary-button {
@@ -154,17 +150,13 @@ section {
 #cover h2, h3 {
     color: var(--secondary-color);
 }
+
 #cover h2 {
     font-size: 94px;
 }
 
-@media (min-width: 660px){
-
-}
 
 /*About*/
-
-
 
 #about h2, p{
     text-align: center;
@@ -174,6 +166,7 @@ section {
     max-width: 770px;
     margin: auto;
 }
+
 
 /*Services*/
 
