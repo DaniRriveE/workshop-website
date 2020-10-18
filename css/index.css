@@ -16,8 +16,8 @@
 }
 
 body {
-    max-width: 1903px;
-    margin: auto;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3, h4 {
@@ -53,6 +53,10 @@ p {
     line-height: 150%;
 }
 
+.content {
+    max-width: 1170px;
+    margin: auto;
+}
 
 /*Header*/
 
@@ -62,10 +66,23 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    /*make it cooler when scrolling: a bit smaller or smth*/
+}
+
+header .content {
+    max-width: 1170px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header .logo {
-    min-width: 260px;
+    min-width: 270px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,7 +107,6 @@ header .menu a {
 }
 header .menu a:hover {
     color: var(--brand-color);
-    transition: color 150ms linear;
 }
 
 
@@ -119,32 +135,45 @@ section {
     flex-direction: column;
 }
 
+#slide1 .content {
+    margin: auto;
+}
+
 #slide1-text {
     text-align: center;
     display: block;
 }
 
 #slide1 h2 {
-    margin: 10px 0 10px 0;
+    margin: 0 0 10px 0;
+}
+
+#slide1 h3 {
+    margin-top: 10px;
+    margin-bottom: 56px;
+}
+
+#slide1 .primary-button {
 }
 
 .primary-button {
     font-family: 'Oswald', sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     text-transform: uppercase;
     color: var(--secondary-color);
     background-color: var(--brand-color);
     text-decoration: none;
     border-radius: 3px;
-    transition: color 150ms linear;
-    transition: background-color 150ms linear;
-    padding: 15px 50px 15px 50px;
+    transition: color 150ms linear, background-color 150ms linear;
+    padding: 16px 56px 16px 56px;
+    -webkit-box-shadow: 0px 5px 35px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 35px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 35px -5px rgba(0,0,0,0.75);
 }
 
 .primary-button:hover {
     background-color: var(--secondary-color);
     color: var(--main-color);
-    /*transition: color 150ms linear;*/
 }
 
 #cover h2, h3 {
@@ -172,4 +201,23 @@ section {
 
 #services {
     background-color: var(--background-color-alt);
+}
+
+
+/*Partners*/
+#partners {
+    background-color: var(--background-color-alt);
+}
+
+#partners .content {
+    display: flex;
+    flex-direction: column;
+    justify-content:;
+    align-items: center;
+}
+#partner-logos {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
