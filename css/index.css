@@ -70,6 +70,7 @@ header {
     position: sticky;
     top: 0;
     /*make it cooler when scrolling: a bit smaller or smth*/
+    /*when scrolling: logo text disappears and appers back to top button on the right, menu goes centered*/
 }
 
 header .content {
@@ -205,6 +206,7 @@ section {
 
 
 /*Partners*/
+
 #partners {
     background-color: var(--background-color-alt);
 }
@@ -220,4 +222,45 @@ section {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+
+/*Best Works*/
+
+#best-works {
+    max-height: 864px;
+    background: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)), url(../img/best-works-bg.jpg);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#best-works h2 {
+    color: var(--secondary-color);
+    display: inline-block;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.car {
+    display: flex;
+}
+
+.car img {
+    width: 50%;
+    height: 50%;
+}
+
+.car-specs {
+    border: 5px solid white;
+    border-left: none;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.5);
 }
