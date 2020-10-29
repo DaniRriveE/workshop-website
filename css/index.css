@@ -54,7 +54,7 @@ p {
 }
 
 .content {
-    max-width: 1170px;
+    max-width: 1200px;/*1170*/
     margin: auto;
 }
 
@@ -240,6 +240,8 @@ section {
 #best-works h2 {
     color: var(--secondary-color);
     display: inline-block;
+    text-align: center;
+    width: 100%;
 }
 
 #projects {
@@ -251,6 +253,10 @@ section {
 
 .car {
     display: flex;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    border-left: none;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.5);
 }
 
 .car img {
@@ -258,9 +264,74 @@ section {
     height: 50%;
 }
 
-.car-specs {
-    border: 5px solid white;
-    border-left: none;
-    color: white;
-    background-color:rgba(0, 0, 0, 0.5);
+.car .car-specs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 15px;
+}
+
+.car .car-specs .model {
+    font-family:'Staatliches', sans-serif;
+    font-size: 28px;
+    margin-bottom: -5px;
+}
+
+.car .car-specs .engine {
+    font-family:'Staatliches', sans-serif;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: -15px;
+}
+
+.car .car-specs .year {
+    font-size: 18px;
+}
+
+.car .car-specs .learn-more-btn {
+    font-family: 'Oswald', sans-serif;
+    color: var(--brand-color);
+    transition: color 150ms linear;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.car .car-specs .learn-more-btn:hover {
+    color: var(--secondary-color);
+}
+
+.team {
+    height: 565px;
+    background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url(../img/team-bg.jpg);
+    color: var(--secondary-color);
+    text-align: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+}
+
+.team .team-members {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px; 
+}
+
+.team .team-members .member {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.team .team-members img {
+    max-width: 369px;
+    height: auto;
+}
+
+.team .team-members .member-name {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 24px;
+}
+
+.team .team-members .member-description {
+    font-size: 14px;
 }
