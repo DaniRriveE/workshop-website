@@ -69,10 +69,29 @@ function updateBigPicture(el) {
 
 //Header transformations
 
-const logo = document.querySelector('.logo');
-const shopName = document.querySelector('.logo h2');
-const menu = document.querySelector('.menu');
+// const logo = document.querySelector('.logo');
+// const shopName = document.querySelector('.logo h2');
+// const menu = document.querySelector('.menu');
 
-function headerTransform() {
+// function headerTransform() {
     
+// }
+
+//Back to top
+
+backToTopBtn = document.getElementById("back-to-top-btn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    backToTopBtn.style.display = "block";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+}
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }

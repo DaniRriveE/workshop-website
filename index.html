@@ -15,6 +15,8 @@
                 <img src="img/logo.png" alt="Logo">
                 <h1>Perfomante shop</h1>
             </div>
+            <label class="burger-icon" for="burger-checkbox">☰</label>
+            <input type="checkbox" id="burger-checkbox">
             <nav class="menu">
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
@@ -26,6 +28,11 @@
             </nav>
         </div>
     </header>
+    <button onclick="backToTop()" id="back-to-top-btn" title="Go to top">
+        <svg viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#fff" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+        </svg>
+    </button>
     <main>
         <section id="cover">
             <div id="cover-carousel" class="carousel slide" data-ride="carousel">
@@ -34,7 +41,7 @@
                         <div class="tint">
                             <img src="img/engineBay_cover.jpg" class="d-block w-100" alt="Engine Bay">
                         </div>
-                        <div class="carousel-caption d-none d-md-block">
+                        <div id="slide1" class="carousel-caption d-md-block">
                             <h2>Perfomante Shop</h2>
                             <h3>Automotive performance parts and tuning workshop</h3>
                             <a class="primary-button" href="#services">Services</a>
@@ -44,7 +51,7 @@
                         <div class="tint">
                             <img src="img/driftingCar_cover.jpg" class="d-block w-100" alt="Drifting Car">
                         </div>
-                        <div class="carousel-caption d-none d-md-block">
+                        <div id="slide2" class="carousel-caption d-md-block">
                             <h2>Get ready for the competition</h2>
                             <h3>Circuit racing, drifting and drag</h3>
                             <a class ="primary-button" href="#gallery">Our Works</a>
