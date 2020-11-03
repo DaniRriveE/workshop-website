@@ -328,6 +328,7 @@ section {
 #custom-carousel-control-prev, #custom-carousel-control-next {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 /*Partners*/
@@ -483,6 +484,7 @@ section {
 #photo-prev, #photo-next {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .main-button {
@@ -815,5 +817,13 @@ footer .menu a:hover {
 @media (max-width: 691px) {
     #slide1 {
         margin-top: -25px;
+    }
+}
+@media (max-width: 593px) {
+    #slide1 {
+        margin-top: -52px;
+    }
+    #slide1 h3 {
+        margin-bottom: 30px;
     }
 }
